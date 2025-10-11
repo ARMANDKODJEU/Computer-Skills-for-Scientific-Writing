@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Front matter</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <hr>
+<h2 id="front-matter">Front matter</h2>
+<p>lang: ru-RU
+title: Computer Skills for Scientific Writing
+author: Кодже Лемонго Арман
+institute: Российский Университет Дружбы Народов
+date: 11 октрябь, 2025, Москва, Россия</p>
+<h2 id="formatting">Formatting</h2>
+<p>mainfont: PT Serif
+romanfont: PT Serif
+sansfont: PT Sans
+monofont: PT Mono
+toc: false
+slide_level: 2
+theme: metropolis
+header-includes:</p>
+<ul>
+<li>\metroset{progressbar=frametitle,sectionpage=progressbar,numbering=fraction}</li>
+<li>'\makeatletter'</li>
+<li>'\beamer@ignorenonframefalse'</li>
+<li>'\makeatother'
+aspectratio: 43
+section-titles: true</li>
+</ul>
+<hr>
+<h1 id="цели-и-задачи">Цели и задачи</h1>
+<h2 id="цель-лабораторной-работы">Цель лабораторной работы</h2>
+<p>This work presents LaTeX’s math mode and how we can type inline and display formulas, the extensions provided by the amsmath package, and how to change fonts in math.</p>
+<h1 id="выполнение-лабораторной-работы">Выполнение лабораторной работы</h1>
+<h2 id="inline-and-display-math-mode">inline and display math mode</h2>
+<p>inline math mode is marked using a pair of dollar symbols (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">...</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.1056em;"></span><span class="mord">...</span></span></span></span>). It is also possible to use the notation ( ... ), You can use exactly the same commands for display math mode as for inline work.
+<img src="file:///c:\Users\HP\Desktop\Computer Skills for Scientific Writing\lab 3\image\1.png" alt="inline and display math mode ">{#fig 1 :inline and display math mode}
+<img src="file:///c:\Users\HP\Desktop\Computer Skills for Scientific Writing\lab 3\image\2.png" alt="compilations results inline and display math mode ">{#fig 2 :compilations results inline and display math mode}</p>
+<h2 id="add-greek-letters-both-lower--and-uppercase">add Greek letters, both lower- and uppercase</h2>
+<p>There are a lot of specialist math mode commands. Some of them are quite easy, for example \sin, \alpha, \beta, \gamma ... and \log for sine and logarithm or \theta for the Greek letter.
+<img src="file:///c:\Users\HP\Desktop\Computer Skills for Scientific Writing\lab 3\image\3.png" alt="Greek letters ">{#fig 3 : Greek letters}
+<img src="file:///c:\Users\HP\Desktop\Computer Skills for Scientific Writing\lab 3\image\4.png" alt="compilations results Greek letters ">{#fig 4 : compilations results Greek letters}</p>
+<h2 id="font-changing-commands">font changing commands</h2>
+<p>They are therefore often written explicitly. There are a set of commands you need here:
+• \mathrm: roman (upright)
+• \mathit: italic spaced as ‘text’
+• \mathbf: boldface
+• \mathsf: sans serif
+• \mathtt: monospaced (typewriter)
+• \mathbb: double-struck (blackboard bold) (provided by the amsfonts package)</p>
+<p>For examples :
+<img src="file:///c:\Users\HP\Desktop\Computer Skills for Scientific Writing\lab 3\image\5.png" alt="Fonts in math mode ">{#fig 5 : Fonts in math mode}
+<img src="file:///c:\Users\HP\Desktop\Computer Skills for Scientific Writing\lab 3\image\6.png" alt="compilations results Fonts in math mode ">{#fig 6 : ompilations results Fonts in math mode}</p>
+<h2 id="document-class-option">document class option</h2>
+<p>fleqn: Makes display equations flush left instead of centered.
+Example: \documentclass[fleqn]{article}
+<img src="file:///c:\Users\HP\Desktop\Computer Skills for Scientific Writing\lab 3\image\9.png" alt="fleqn flush left equation">{#fig 9 :fleqn flush left equation }
+<img src="file:///c:\Users\HP\Desktop\Computer Skills for Scientific Writing\lab 3\image\10.png" alt="compilations results fleqn flush left equation">{#fig 10 : compilations results fleqn flush left equation}</p>
+<p>leqno: Places equation numbers on the left side of the equation
+Example: \documentclass[leqno]{article}
+<img src="file:///c:\Users\HP\Desktop\Computer Skills for Scientific Writing\lab 3\image\11.png" alt="leqno flush left equation ">{#fig 11:leqno flush left equation}
+<img src="file:///c:\Users\HP\Desktop\Computer Skills for Scientific Writing\lab 3\image\12.png" alt="compilation results with leqno left equation numbers">{#fig 12 : compilation results with leqno left equation numbers}</p>
+<h1 id="выводы">Выводы</h1>
+<p>в конце нашего лабораторная работа, я освоил как работает математический режим LaTeX для встроенных и отображаемых формул, греческих букв, стилей шрифтов и параметров макета уравнений.</p>
+
+            <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+            
+        </body>
+        </html>
