@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Front matter</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <hr>
+<h2 id="front-matter">Front matter</h2>
+<p>lang: ru-RU
+title: Computer Skills for Scientific Writing
+author: Кодже Лемонго Арман
+institute: Российский Университет Дружбы Народов
+date: 24 октрябь, 2025, Москва, Россия</p>
+<h2 id="formatting">Formatting</h2>
+<p>mainfont: PT Serif
+romanfont: PT Serif
+sansfont: PT Sans
+monofont: PT Mono
+toc: false
+slide_level: 2
+theme: metropolis
+header-includes:</p>
+<ul>
+<li>\metroset{progressbar=frametitle,sectionpage=progressbar,numbering=fraction}</li>
+<li>'\makeatletter'</li>
+<li>'\beamer@ignorenonframefalse'</li>
+<li>'\makeatother'
+aspectratio: 43
+section-titles: true</li>
+</ul>
+<hr>
+<h1 id="цели-и-задачи">Цели и задачи</h1>
+<h2 id="цель-лабораторной-работы">Цель лабораторной работы</h2>
+<p>The purpose of this lab work is to learn how to include and manipulate graphics in LaTeX documents using the graphicx package and related tools.</p>
+<h1 id="выполнение-лабораторной-работы">Выполнение лабораторной работы</h1>
+<h2 id="inline-and-display-math-mode">inline and display math mode</h2>
+<pre><code class="language-latex"><span class="hljs-keyword">\documentclass</span>{article}
+<span class="hljs-keyword">\usepackage</span>{graphicx}
+
+<span class="hljs-keyword">\begin</span>{document}
+<span class="hljs-keyword">\begin</span>{figure}[ht]
+    <span class="hljs-keyword">\centering</span>
+    <span class="hljs-keyword">\includegraphics</span>[width=0.6<span class="hljs-keyword">\textwidth</span>]{image}
+    <span class="hljs-keyword">\caption</span>{Моё собственное изображение}
+    <span class="hljs-keyword">\label</span>{fig:myimage}
+<span class="hljs-keyword">\end</span>{document}
+</code></pre>
+<p><img src="file:///c:\Users\HP\Desktop\Computer Skills for Scientific Writing\lab 4\image\01.png" alt="">{ #fig:001 width=100% }</p>
+<h2 id="exercise-2-exploring-size-and-rotation-options">Exercise 2: Exploring Size and Rotation Options</h2>
+<pre><code class="language-latex"><span class="hljs-keyword">\documentclass</span>{article}
+<span class="hljs-keyword">\usepackage</span>{graphicx}
+
+<span class="hljs-keyword">\begin</span>{document}
+<span class="hljs-keyword">\includegraphics</span>[height=3cm]{image}
+<span class="hljs-keyword">\includegraphics</span>[width=0.3<span class="hljs-keyword">\textwidth</span>]{image}
+<span class="hljs-keyword">\includegraphics</span>[scale=0.5]{image}
+<span class="hljs-keyword">\includegraphics</span>[angle=45, width=0.2<span class="hljs-keyword">\textwidth</span>]{image}
+<span class="hljs-keyword">\end</span>{document}
+</code></pre>
+<p><img src="file:///c:\Users\HP\Desktop\Computer Skills for Scientific Writing\lab 4\image\02.png" alt="">{ #fig:002 width=100% }ults Greek letters}</p>
+<h2 id="exercise-3-textbackslash-linewidth--comparing-textwidth-and-linewidth">Exercise 3: textbackslash linewidth / Comparing textwidth and linewidth</h2>
+<pre><code class="language-latex"><span class="hljs-keyword">\documentclass</span>[twocolumn]{article}
+<span class="hljs-keyword">\usepackage</span>{graphicx}
+<span class="hljs-keyword">\usepackage</span>{lipsum}
+
+<span class="hljs-keyword">\begin</span>{document}
+<span class="hljs-keyword">\lipsum</span>[1]
+<span class="hljs-keyword">\begin</span>{figure}[ht]
+    <span class="hljs-keyword">\centering</span>
+    <span class="hljs-keyword">\includegraphics</span>[width=0.8<span class="hljs-keyword">\textwidth</span>]{image}
+    <span class="hljs-keyword">\caption</span>{С использованием <span class="hljs-keyword">\textbackslash</span> textwidth}
+<span class="hljs-keyword">\end</span>{figure}
+<span class="hljs-keyword">\begin</span>{figure}[ht]
+    <span class="hljs-keyword">\centering</span>
+    <span class="hljs-keyword">\includegraphics</span>[width=0.8<span class="hljs-keyword">\linewidth</span>]{image}
+    <span class="hljs-keyword">\caption</span>{С использованием <span class="hljs-keyword">\textbackslash</span> linewidth}
+<span class="hljs-keyword">\end</span>{figure}
+<span class="hljs-keyword">\lipsum</span>[2-5]
+<span class="hljs-keyword">\end</span>{document}
+</code></pre>
+<p><img src="file:///c:\Users\HP\Desktop\Computer Skills for Scientific Writing\lab 4\image\03.png" alt="">{ #fig:003 width=100% }</p>
+<h2 id="exercisе-4-float-placement-with-different-specifiers">Exercisе 4: Float Placement with Different Specifiers</h2>
+<pre><code class="language-latex"><span class="hljs-keyword">\documentclass</span>{article}
+<span class="hljs-keyword">\usepackage</span>{graphicx}
+<span class="hljs-keyword">\usepackage</span>{lipsum}
+
+<span class="hljs-keyword">\begin</span>{document}
+<span class="hljs-keyword">\lipsum</span>[1-2]
+<span class="hljs-keyword">\begin</span>{figure}[h]
+    <span class="hljs-keyword">\centering</span>
+    <span class="hljs-keyword">\includegraphics</span>[width=0.4<span class="hljs-keyword">\textwidth</span>]{image1}
+    <span class="hljs-keyword">\caption</span>{Опция h (здесь)}
+<span class="hljs-keyword">\end</span>{figure}
+<span class="hljs-keyword">\lipsum</span>[3]
+<span class="hljs-keyword">\begin</span>{figure}[t]
+    <span class="hljs-keyword">\centering</span>
+    <span class="hljs-keyword">\includegraphics</span>[width=0.4<span class="hljs-keyword">\textwidth</span>]{image2}
+    <span class="hljs-keyword">\caption</span>{Опция t (верх)}
+<span class="hljs-keyword">\end</span>{figure}
+<span class="hljs-keyword">\begin</span>{figure}[b]
+    <span class="hljs-keyword">\centering</span>
+    <span class="hljs-keyword">\includegraphics</span>[width=0.4<span class="hljs-keyword">\textwidth</span>]{image3}
+    <span class="hljs-keyword">\caption</span>{Опция b (низ)}
+<span class="hljs-keyword">\end</span>{figure}
+<span class="hljs-keyword">\lipsum</span>[4-8]
+<span class="hljs-keyword">\end</span>{document}
+</code></pre>
+<p><img src="file:///c:\Users\HP\Desktop\Computer Skills for Scientific Writing\lab 4\image\04.png" alt="">{ #fig:004 width=100% }</p>
+<h2 id="exercise-5-cross-references-and-number-of-compilations">Exercise 5: Cross-references and Number of Compilations</h2>
+<pre><code class="language-latex"><span class="hljs-keyword">\documentclass</span>{article}
+<span class="hljs-keyword">\usepackage</span>{graphicx}
+
+<span class="hljs-keyword">\begin</span>{document}
+<span class="hljs-keyword">\section</span>{Введение}
+<span class="hljs-keyword">\label</span>{sec:intro}
+
+В разделе~<span class="hljs-keyword">\ref</span>{sec:intro} мы представляем...
+
+<span class="hljs-keyword">\subsection</span>{Первая подсекция}
+<span class="hljs-keyword">\label</span>{subsec:first}
+
+Как видно в подсекции~<span class="hljs-keyword">\ref</span>{subsec:first}...
+
+<span class="hljs-keyword">\begin</span>{figure}[ht]
+    <span class="hljs-keyword">\centering</span>
+    <span class="hljs-keyword">\includegraphics</span>[width=0.5<span class="hljs-keyword">\textwidth</span>]{image}
+    <span class="hljs-keyword">\caption</span>{Тестовая фигура}
+    <span class="hljs-keyword">\label</span>{fig:test}
+<span class="hljs-keyword">\end</span>{figure}
+
+Рисунок~<span class="hljs-keyword">\ref</span>{fig:test} показывает...
+<span class="hljs-keyword">\end</span>{document}
+</code></pre>
+<p><img src="file:///c:\Users\HP\Desktop\Computer Skills for Scientific Writing\lab 4\image\05.png" alt="">{ #fig:005 width=100% }</p>
+<h2 id="exercise-6-textbackslash-caption--placing-label-beforeafter-caption">Exercise 6: textbackslash caption / Placing label Before/After caption</h2>
+<pre><code class="language-latex"><span class="hljs-keyword">\documentclass</span>{article}
+<span class="hljs-keyword">\usepackage</span>{graphicx}
+
+<span class="hljs-keyword">\begin</span>{document}
+<span class="hljs-keyword">\begin</span>{figure}[ht]
+    <span class="hljs-keyword">\centering</span>
+    <span class="hljs-keyword">\includegraphics</span>[width=0.4<span class="hljs-keyword">\textwidth</span>]{image2}
+    <span class="hljs-keyword">\label</span>{fig:before}
+    <span class="hljs-keyword">\caption</span>{Рисунок с label до caption}
+<span class="hljs-keyword">\end</span>{figure}
+<span class="hljs-keyword">\begin</span>{figure}[ht]
+    <span class="hljs-keyword">\centering</span>
+    <span class="hljs-keyword">\includegraphics</span>[width=0.4<span class="hljs-keyword">\textwidth</span>]{image3}
+    <span class="hljs-keyword">\caption</span>{Рисунок с label после caption}
+    <span class="hljs-keyword">\label</span>{fig:after}
+<span class="hljs-keyword">\end</span>{figure}
+Ссылка на рисунок~<span class="hljs-keyword">\ref</span>{fig:before} (неправильная)<span class="hljs-keyword">\\</span>
+Ссылка на рисунок~<span class="hljs-keyword">\ref</span>{fig:after} (правильная)
+<span class="hljs-keyword">\end</span>{document}
+</code></pre>
+<p><img src="file:///c:\Users\HP\Desktop\Computer Skills for Scientific Writing\lab 4\image\06.png" alt="">{ #fig:006 width=100% }</p>
+<h2 id="exercise-7--label-after-endequation">Exercise 7:  label After end{equation}</h2>
+<pre><code class="language-latex"><span class="hljs-keyword">\documentclass</span>{article}
+<span class="hljs-keyword">\usepackage</span>{amsmath}
+
+<span class="hljs-keyword">\begin</span>{document}
+<span class="hljs-keyword">\begin</span>{equation}
+E = mc<span class="hljs-built_in">^</span>2
+<span class="hljs-keyword">\end</span>{equation}
+<span class="hljs-keyword">\label</span>{eq:after}
+<span class="hljs-keyword">\begin</span>{equation}
+F = ma
+<span class="hljs-keyword">\label</span>{eq:inside}
+<span class="hljs-keyword">\end</span>{equation}
+Ссылка на уравнение~<span class="hljs-keyword">\ref</span>{eq:after} (неправильная)<span class="hljs-keyword">\\</span>
+Ссылка на уравнение~<span class="hljs-keyword">\ref</span>{eq:inside} (правильная)
+<span class="hljs-keyword">\end</span>{document}
+</code></pre>
+<p><img src="file:///c:\Users\HP\Desktop\Computer Skills for Scientific Writing\lab 4\image\07.png" alt="">{ #fig:007 width=100% }</p>
+<h1 id="выводы">Выводы</h1>
+<p>в конце нашего лабораторная работа, я освоил  основы включения и управления графикой в документах LaTeX. Освоил работу с пакетом <code>graphicx</code></p>
+
+            
+            
+        </body>
+        </html>

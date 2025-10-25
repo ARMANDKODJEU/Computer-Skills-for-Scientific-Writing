@@ -1,0 +1,19 @@
+\documentclass{article}
+\usepackage{graphicx}
+
+\begin{document}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.4\textwidth]{image1}
+    \label{fig:before}
+    \caption{Рисунок с label до caption}
+\end{figure}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.4\textwidth]{image2}
+    \caption{Рисунок с label после caption}
+    \label{fig:after}
+\end{figure}
+Ссылка на рисунок~\ref{fig:before} (неправильная)\\
+Ссылка на рисунок~\ref{fig:after} (правильная)
+\end{document}
