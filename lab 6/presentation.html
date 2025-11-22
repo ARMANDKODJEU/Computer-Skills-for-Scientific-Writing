@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Front matter</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <hr>
+<h2 id="front-matter">Front matter</h2>
+<p>lang: ru-RU
+title: Презентация лабораторной работе №6<br>
+subtitle: Working with Bibliography
+author:</p>
+<ul>
+<li>Кодже Лемонго Арман
+institute:</li>
+<li>Российский университет дружбы народов, Москва, Россия
+date: 11 Ноября 2025</li>
+</ul>
+<h2 id="i18n-babel">i18n babel</h2>
+<p>babel-lang: russian
+babel-otherlangs: english</p>
+<h2 id="formatting-pdf">Formatting pdf</h2>
+<p>toc: false
+toc-title: Содержание
+slide_level: 2
+aspectratio: 169
+section-titles: true
+theme: metropolis
+header-includes:</p>
+<ul>
+<li>\metroset{progressbar=frametitle,sectionpage=progressbar,numbering=fraction}</li>
+</ul>
+<hr>
+<h1 id="информация">Информация</h1>
+<h2 id="докладчик">Докладчик</h2>
+<p>:::::::::::::: {.columns align=center}
+::: {.column width=&quot;70%&quot;}</p>
+<ul>
+<li>Кодже Лемонго Арман</li>
+<li>Студент физмат</li>
+<li>Российский университет дружбы народов</li>
+<li><a href="mailto:1032245759@pfur.ru">1032245759@pfur.ru</a></li>
+</ul>
+<p>:::
+::: {.column width=&quot;30%&quot;}
+:::
+::::::::::::::</p>
+<h2 id="цель-работы">Цель работы</h2>
+<p>Целью данной лабораторной работы является освоение методов работы с библиографией в LaTeX, включая использование систем BibTeX и biblatex для управления цитированием и списками литературы.</p>
+<p>The purpose of this lab work is to learn how to work with bibliography in LaTeX, including using BibTeX and biblatex systems for managing citations and reference lists.</p>
+<h2 id="задание">Задание</h2>
+<ol>
+<li>Освоить workflow с natbib и BibTeX для работы с библиографией</li>
+<li>Освоить workflow с biblatex и Biber и их особенности</li>
+<li>Сравнить два подхода к работе с библиографией и их применение</li>
+<li>Выполнить практические упражнения по созданию и управлению библиографическими ссылками</li>
+</ol>
+<h1 id="теоретическое-введение">Теоретическое введение</h1>
+<h2 id="6-работа-с-библиографией--working-with-bibliography">6 Работа с библиографией / Working with Bibliography</h2>
+<p>Для библиографических ссылок обычно используется информация из внешних файлов - библиографических баз данных.
+For bibliographic citations, information is typically retrieved from external files - bibliographic databases.</p>
+<h2 id="61-библиографические-базы-данных--reference-databases">6.1 Библиографические базы данных / Reference Databases</h2>
+<p>Базы данных BibTeX содержат записи с различными полями.
+BibTeX databases contain entries with various fields.</p>
+<p><img src="file:///c:\Users\HP\Desktop\Lab6aconv\presentation\image\1_1.jpg" alt="">{width=80%}</p>
+<h2 id="63-workflow-bibtex-с-natbib--the-bibtex-workflow-with-natbib">6.3 Workflow BibTeX с natbib / The BibTeX Workflow with natbib</h2>
+<p>Пакет natbib предоставляет расширенные возможности цитирования.
+The natbib package provides enhanced citation capabilities.</p>
+<p><img src="file:///c:\Users\HP\Desktop\Lab6aconv\presentation\image\2.jpg" alt="">{width=80%}</p>
+<h2 id="64-workflow-biblatex--the-biblatex-workflow">6.4 Workflow biblatex / The biblatex Workflow</h2>
+<p>Пакет biblatex работает несколько иначе, с загрузкой ресурсов в преамбуле.
+The biblatex package works differently, loading resources in the preamble.</p>
+<p><img src="file:///c:\Users\HP\Desktop\Lab6aconv\presentation\image\3.jpg" alt="">{width=80%}</p>
+<h2 id="67-гиперссылки--hyperlinks">6.7 Гиперссылки / Hyperlinks</h2>
+<p>Пакет hyperref автоматически создает ссылки в библиографии.
+The hyperref package automatically creates links in bibliography.</p>
+<p>:::::::::::::: {.columns align=center}
+::: {.column width=&quot;50%&quot;}</p>
+<p><img src="file:///c:\Users\HP\Desktop\Lab6aconv\presentation\image\4.jpg" alt="">{width=90%}</p>
+<p>:::
+::: {.column width=&quot;50%&quot;}</p>
+<p><img src="file:///c:\Users\HP\Desktop\Lab6aconv\presentation\image\5.jpg" alt="">{width=90%}</p>
+<p>:::
+::::::::::::::</p>
+<h1 id="выполнение-лабораторной-работы">Выполнение лабораторной работы</h1>
+<h2 id="упражнение-1-сравнение-natbib-и-biblatex">Упражнение 1: Сравнение natbib и biblatex</h2>
+<p>:::::::::::::: {.columns align=center}
+::: {.column width=&quot;50%&quot;}</p>
+<p><strong>natbib workflow</strong>
+<img src="file:///c:\Users\HP\Desktop\Lab6aconv\presentation\image\6.jpg" alt="">{width=90%}</p>
+<p>:::
+::: {.column width=&quot;50%&quot;}</p>
+<p><strong>biblatex workflow</strong>
+<img src="file:///c:\Users\HP\Desktop\Lab6aconv\presentation\image\7.jpg" alt="">{width=90%}</p>
+<p>:::
+::::::::::::::</p>
+<h2 id="упражнение-2-создание-новых-записей">Упражнение 2: Создание новых записей</h2>
+<p><strong>Новая запись в базе данных и ссылки</strong>
+<img src="file:///c:\Users\HP\Desktop\Lab6aconv\presentation\image\8.jpg" alt="">{width=80%}</p>
+<h2 id="упражнение-3-работа-с-отсутствующими-записями">Упражнение 3: Работа с отсутствующими записями</h2>
+<p><strong>Ссылки на отсутствующие записи в базе данных</strong>
+<img src="file:///c:\Users\HP\Desktop\Lab6aconv\presentation\image\9.jpg" alt="">{width=80%}</p>
+<h2 id="упражнение-4-числовые-стили-библиографии">Упражнение 4: Числовые стили библиографии</h2>
+<p>:::::::::::::: {.columns align=center}
+::: {.column width=&quot;50%&quot;}</p>
+<p><strong>natbib с числовым стилем</strong>
+<img src="file:///c:\Users\HP\Desktop\Lab6aconv\presentation\image\10.jpg" alt="">{width=90%}</p>
+<p>:::
+::: {.column width=&quot;50%&quot;}</p>
+<p><strong>biblatex с числовым стилем</strong>
+<img src="file:///c:\Users\HP\Desktop\Lab6aconv\presentation\image\11.jpg" alt="">{width=90%}</p>
+<p>:::
+::::::::::::::</p>
+<h1 id="выводы">Выводы</h1>
+<p>В ходе лабораторной работы №6 я освоил методы работы с библиографией в LaTeX. Изучил два основных подхода: традиционный workflow с natbib и BibTeX, а также современный подход с biblatex и Biber. Научился создавать библиографические базы данных, управлять стилями цитирования и создавать гиперссылки в библиографии.</p>
+<p>In this lab work #6, I mastered bibliography management methods in LaTeX. I studied two main approaches: traditional workflow with natbib and BibTeX, as well as modern approach with biblatex and Biber. I learned to create bibliographic databases, manage citation styles, and create hyperlinks in bibliography.</p>
+<h1 id="список-литературы">Список литературы</h1>
+
+            
+            
+        </body>
+        </html>
