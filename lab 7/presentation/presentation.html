@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Front matter</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <hr>
+<h2 id="front-matter">Front matter</h2>
+<p>lang: ru-RU
+title: Презентация лабораторной работе №7<br>
+subtitle: LaTeX Presentations and Posters
+author:</p>
+<ul>
+<li>Кодже лемонго Арман
+institute:</li>
+<li>Российский университет дружбы народов, Москва, Россия</li>
+<li>Объединённый институт ядерных исследований, Дубна, Россия</li>
+</ul>
+<h2 id="i18n-babel">i18n babel</h2>
+<p>babel-lang: russian
+babel-otherlangs: english</p>
+<h2 id="formatting-pdf">Formatting pdf</h2>
+<p>toc: false
+toc-title: Содержание
+slide_level: 2
+aspectratio: 169
+section-titles: true
+theme: metropolis
+header-includes:</p>
+<ul>
+<li>\metroset{progressbar=frametitle,sectionpage=progressbar,numbering=fraction}</li>
+</ul>
+<hr>
+<h1 id="информация">Информация</h1>
+<h2 id="докладчик">Докладчик</h2>
+<p>:::::::::::::: {.columns align=center}
+::: {.column width=&quot;70%&quot;}</p>
+<ul>
+<li>Кодже лемонго Арман</li>
+<li>Студент НФИ-мд-01-24</li>
+<li>Российский университет дружбы народов</li>
+</ul>
+<p>:::
+::::::::::::::</p>
+<h2 id="цель-работы">Цель работы</h2>
+<p>Целью данной лабораторной работы является освоение создания презентаций и постеров в LaTeX с использованием пакета Beamer и других инструментов для визуального представления научных работ.</p>
+<h1 id="теоретическое-введение">Теоретическое введение</h1>
+<h2 id="7-презентации-latex">7 Презентации LaTeX</h2>
+<p>Для создания презентаций в LaTeX используется класс документов beamer.</p>
+<h2 id="71-презентации-с-beamer">7.1 Презентации с Beamer</h2>
+<p>Beamer предоставляет профессиональные темы и возможности анимации.</p>
+<p><img src="file:///c:\Users\HP\Desktop\Computer Skills for Scientific Writing\lab 7\presentation\image\1_0.jpg" alt="">{width=80%}</p>
+<h2 id="структура-презентации">Структура презентации</h2>
+<p>Основные элементы: титульный слайд, frame окружения, блоки и колонки.</p>
+<p><img src="file:///c:\Users\HP\Desktop\Computer Skills for Scientific Writing\lab 7\presentation\image\1_1.jpg" alt="">{width=80%}</p>
+<h2 id="паузы-и-эффекты">Паузы и эффекты</h2>
+<p>Команды <code>\pause</code> и <code>\uncover</code> для динамического появления контента.</p>
+<p>:::::::::::::: {.columns align=center}
+::: {.column width=&quot;50%&quot;}</p>
+<p><strong>Паузы с</strong>
+<img src="file:///c:\Users\HP\Desktop\Computer Skills for Scientific Writing\lab 7\presentation\image\1_2.jpg" alt="">{width=90%}</p>
+<p>:::
+::: {.column width=&quot;50%&quot;}</p>
+<p><strong>Точное управление с</strong>
+<img src="file:///c:\Users\HP\Desktop\Computer Skills for Scientific Writing\lab 7\presentation\image\1_3.jpg" alt="">{width=90%}</p>
+<p>:::
+::::::::::::::</p>
+<h2 id="72-постеры">7.2 Постеры</h2>
+<p>Три основных метода создания постеров в LaTeX.
+Three main methods for creating posters in LaTeX.</p>
+<h2 id="методы-создания-постеров">Методы создания постеров</h2>
+<p>:::::::::::::: {.columns align=center}
+::: {.column width=&quot;33%&quot;}</p>
+<p><strong>a0poster</strong>
+<img src="file:///c:\Users\HP\Desktop\Computer Skills for Scientific Writing\lab 7\presentation\image\2_1.jpg" alt="">{width=90%}</p>
+<p>:::
+::: {.column width=&quot;33%&quot;}</p>
+<p><strong>beamerposter</strong>
+<img src="file:///c:\Users\HP\Desktop\Computer Skills for Scientific Writing\lab 7\presentation\image\2_2.jpg" alt="">{width=90%}</p>
+<p>:::
+::: {.column width=&quot;33%&quot;}</p>
+<p><strong>tikzposter</strong>
+<img src="file:///c:\Users\HP\Desktop\Computer Skills for Scientific Writing\lab 7\presentation\image\2_4.jpg" alt="">{width=90%}</p>
+<p>:::
+::::::::::::::</p>
+<h1 id="выполнение-лабораторной-работы">Выполнение лабораторной работы</h1>
+<h2 id="создание-постеров">Создание постеров</h2>
+<p>:::::::::::::: {.columns align=center}
+::: {.column width=&quot;50%&quot;}</p>
+<p><strong>Постер с a0poster</strong>
+<img src="file:///c:\Users\HP\Desktop\Computer Skills for Scientific Writing\lab 7\presentation\image\3.jpg" alt="">{width=90%}</p>
+<p>:::
+::: {.column width=&quot;50%&quot;}</p>
+<p><strong>Постер с beamerposter</strong>
+<img src="file:///c:\Users\HP\Desktop\Computer Skills for Scientific Writing\lab 7\presentation\image\1_2b.jpg" alt="">{width=90%}</p>
+<p>:::
+::::::::::::::</p>
+<h1 id="выводы">Выводы</h1>
+<p>В ходе лабораторной работы №7 я освоил создание презентаций и постеров в LaTeX. Изучил работу с классом Beamer для создания динамических презентаций с паузами и эффектами появления. Освоил три основных метода создания постеров: a0poster, beamerposter и tikzposter, изучил их преимущества и особенности применения.</p>
+<h1 id="список-литературы">Список литературы</h1>
+<ol>
+<li><a href="https://www.latex-project.org/get/">latex</a></li>
+</ol>
+
+            
+            
+        </body>
+        </html>
