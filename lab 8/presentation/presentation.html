@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Front matter</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <hr>
+<h2 id="front-matter">Front matter</h2>
+<p>lang: ru-RU
+title: Презентация лабораторной работе №8<br>
+subtitle: Diagrams and Drawings as Code
+author:</p>
+<ul>
+<li>Кодже лемонго Арман
+institute:</li>
+<li>Российский университет дружбы народов, Москва, Россия</li>
+<li>Объединённый институт ядерных исследований, Дубна, Россия</li>
+</ul>
+<h2 id="i18n-babel">i18n babel</h2>
+<p>babel-lang: russian
+babel-otherlangs: english</p>
+<h2 id="formatting-pdf">Formatting pdf</h2>
+<p>toc: false
+toc-title: Содержание
+slide_level: 2
+aspectratio: 169
+section-titles: true
+theme: metropolis
+header-includes:</p>
+<ul>
+<li>\metroset{progressbar=frametitle,sectionpage=progressbar,numbering=fraction}</li>
+</ul>
+<hr>
+<h1 id="информация">Информация</h1>
+<h2 id="докладчик">Докладчик</h2>
+<p>:::::::::::::: {.columns align=center}
+::: {.column width=&quot;70%&quot;}</p>
+<ul>
+<li>Кодже лемонго Арман</li>
+<li>Студент НФИ-мд-01-24</li>
+<li>Российский университет дружбы народов</li>
+</ul>
+<p>:::
+::::::::::::::</p>
+<h2 id="цель-работы">Цель работы</h2>
+<p>Целью данной лабораторной работы является освоение создания диаграмм и рисунков программным способом в LaTeX с использованием пакета TikZ и других инструментов для визуального представления данных и математических объектов.</p>
+<h2 id="задание">Задание</h2>
+<ol>
+<li>Изучить основы создания графики с помощью пакета TikZ</li>
+<li>Освоить построение линий, кривых и узлов в TikZ</li>
+<li>Научиться создавать сложные графики и диаграммы</li>
+</ol>
+<h1 id="теоретическое-введение">Теоретическое введение</h1>
+<h2 id="8-диаграммы-и-рисунки-как-код">8 Диаграммы и рисунки как код</h2>
+<p>TikZ - мощный пакет для создания графики программным способом в LaTeX.</p>
+<h2 id="81-tikz---основы">8.1 TikZ - Основы</h2>
+<p>Основные элементы: линии, узлы, кривые и системы координат.</p>
+<p><img src="file:///c:\Users\HP\Desktop\Computer Skills for Scientific Writing\lab 8\presentation\image\1.jpg" alt="">{width=80%}</p>
+<h2 id="строительные-блоки-tikz">Строительные блоки TikZ</h2>
+<p>:::::::::::::: {.columns align=center}
+::: {.column width=&quot;50%&quot;}</p>
+<p><strong>Рисование линий</strong>
+<img src="file:///c:\Users\HP\Desktop\Computer Skills for Scientific Writing\lab 8\presentation\image\2.jpg" alt="">{width=90%}</p>
+<p>:::
+::: {.column width=&quot;50%&quot;}</p>
+<p><strong>Узлы и метки</strong>
+<img src="file:///c:\Users\HP\Desktop\Computer Skills for Scientific Writing\lab 8\presentation\image\3.jpg" alt="">{width=90%}</p>
+<p>:::
+::::::::::::::</p>
+<h2 id="возможности-tikz">Возможности TikZ</h2>
+<p>:::::::::::::: {.columns align=center}
+::: {.column width=&quot;33%&quot;}</p>
+<p><strong>Графики функций</strong>
+<img src="file:///c:\Users\HP\Desktop\Computer Skills for Scientific Writing\lab 8\presentation\image\4.jpg" alt="">{width=90%}</p>
+<p>:::
+::: {.column width=&quot;33%&quot;}</p>
+<p><strong>Циклы и повторения</strong>
+<img src="file:///c:\Users\HP\Desktop\Computer Skills for Scientific Writing\lab 8\presentation\image\5.jpg" alt="">{width=90%}</p>
+<p>:::
+::: {.column width=&quot;33%&quot;}</p>
+<p><strong>Стили и цвета</strong>
+<img src="file:///c:\Users\HP\Desktop\Computer Skills for Scientific Writing\lab 8\presentation\image\5_0.jpg" alt="">{width=90%}</p>
+<p>:::
+::::::::::::::</p>
+<h1 id="выполнение-лабораторной-работы">Выполнение лабораторной работы</h1>
+<h2 id="упражнение-1-создание-графа">Упражнение 1: Создание графа</h2>
+<p><strong>Ориентированный граф с узлами и связями</strong>
+<img src="file:///c:\Users\HP\Desktop\Computer Skills for Scientific Writing\lab 8\presentation\image\7.jpg" alt="">{width=80%}</p>
+<h2 id="упражнение-2-графики-функций">Упражнение 2: Графики функций</h2>
+<p>:::::::::::::: {.columns align=center}
+::: {.column width=&quot;60%&quot;}</p>
+<p><strong>Экспонента и логарифм</strong>
+<img src="file:///c:\Users\HP\Desktop\Computer Skills for Scientific Writing\lab 8\presentation\image\8.jpg" alt="">{width=95%}</p>
+<p>:::
+::: {.column width=&quot;40%&quot;}</p>
+<p><strong>Функции:</strong></p>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>e</mi><mi>x</mi></msup></mrow><annotation encoding="application/x-tex">y = e^x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6644em;"></span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6644em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">x</span></span></span></span></span></span></span></span></span></span></span></li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>ln</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">y = \ln(x)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop">ln</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span></span></span></span></li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">y = 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span></li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x = 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span></li>
+</ul>
+<p><strong>Особенности:</strong></p>
+<ul>
+<li>Система координат</li>
+<li>Сетка</li>
+<li>Метки точек</li>
+</ul>
+<p>:::
+::::::::::::::</p>
+<h2 id="упражнение-3-фракталы">Упражнение 3: Фракталы</h2>
+<p>:::::::::::::: {.columns align=center}
+::: {.column width=&quot;50%&quot;}</p>
+<p><strong>Ковёр Серпинского</strong>
+<img src="file:///c:\Users\HP\Desktop\Computer Skills for Scientific Writing\lab 8\presentation\image\9.jpg" alt="">{width=90%}</p>
+<p>:::
+::: {.column width=&quot;50%&quot;}</p>
+<p><strong>Треугольник Серпинского</strong>
+<img src="file:///c:\Users\HP\Desktop\Computer Skills for Scientific Writing\lab 8\presentation\image\6.jpg" alt="">{width=90%}</p>
+<p>:::
+::::::::::::::</p>
+<h1 id="выводы">Выводы</h1>
+<p>В ходе лабораторной работы №8 я освоил создание диаграмм и рисунков программным способом в LaTeX с использованием пакета TikZ. Изучил основы построения линий, кривых и узлов, освоил создание сложных графиков функций и фрактальных структур.</p>
+<h1 id="список-литературы">Список литературы</h1>
+<ol>
+<li><a href="https://www.latex-project.org/get/">latex</a></li>
+</ol>
+
+            <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+            
+        </body>
+        </html>
